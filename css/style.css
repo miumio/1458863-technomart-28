@@ -855,7 +855,7 @@ input[type="radio"].visually-hidden {
   background-color: var(--basic-white);
 }
 
-.service-link-active a{
+.service-link-active a {
   color: var(--special-grey);
 }
 
