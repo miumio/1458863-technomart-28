@@ -1677,75 +1677,21 @@ input[type="radio"].visually-hidden {
 .social-button:hover {
   background: var(--basic-red);
 }
+/* Modal */
 
-/* Feedback */
-
-.feedback {
+.modal {
   display: none;
-  position: relative;
-
-  display: flex;
-
-  width: 620px;
-  padding: 39px 0;
-/*
-  font-family: "Cuprum", Tahoma, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-*/
-  border-top: 7px solid var(--basic-red);
-  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: var(--basic-white);
   box-shadow: 0px 4px 20px var(--box-shadow);
 }
 
-.feedback-form {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 460px;
-  margin: 0 auto;
-}
-
-.feedback-item {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 13px;
-  width: 220px;
-}
-
-.feedback-message {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.feedback-message textarea {
-  padding: 10px 10px 14px;
-  margin-bottom: 73px;
-  border: 2px solid var(--basic-greylight);
-}
-
-.feedback label {
-  margin-bottom: 11px;
-  font-family: "Cuprum", Tahoma, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-}
-
-.feedback input {
-  padding: 0 10px;
-  height: 38px;
-  border: 2px solid var(--basic-greylight);
-
-  box-sizing: border-box;
-}
-
-.feedback .btn-red {
-  width: 100%;
-  z-index: 100;
-}
-
-.feedback-btn-close {
+.modal-close {
   position: absolute;
   top: 13px;
   right: 11px;
@@ -1757,7 +1703,71 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
-.feedback-strip {
+/* Feedback */
+
+.modal-feedback {
+  display: flex;
+
+  width: 620px;
+  height: 430px;
+  padding: 39px 0;
+/*
+  font-family: "Cuprum", Tahoma, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+*/
+  border-top: 7px solid var(--basic-red);
+  box-sizing: border-box;
+}
+
+.modal-feedback-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 460px;
+  margin: 0 auto;
+}
+
+.modal-feedback-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 13px;
+  width: 220px;
+}
+
+.modal-feedback-message {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.modal-feedback-message textarea {
+  padding: 10px 10px 14px;
+  margin-bottom: 73px;
+  border: 2px solid var(--basic-greylight);
+}
+
+.modal-feedback label {
+  margin-bottom: 11px;
+  font-family: "Cuprum", Tahoma, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.modal-feedback input {
+  padding: 0 10px;
+  height: 38px;
+  border: 2px solid var(--basic-greylight);
+
+  box-sizing: border-box;
+}
+
+.modal-feedback .btn-red {
+  width: 100%;
+  z-index: 100;
+}
+
+.modal-feedback-strip {
   position: absolute;
   bottom: 0;
   width: 100%;
