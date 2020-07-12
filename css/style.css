@@ -1707,22 +1707,16 @@ input[type="radio"].visually-hidden {
 /* Feedback */
 
 .modal-feedback {
-
   width: 620px;
   height: 430px;
   padding: 39px 0;
-/*
-  font-family: "Cuprum", Tahoma, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-*/
+
   border-top: 7px solid var(--basic-red);
   box-sizing: border-box;
 }
 
 .modal-feedback-form {
-   display: none;
-   display: flex;
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 460px;
@@ -1774,6 +1768,18 @@ input[type="radio"].visually-hidden {
   width: 100%;
   height: 112px;
   background-color: var(--form-strip);
+}
+
+/* Modal map */
+
+.modal-map {
+  width: 943px;
+  height: 449px;
+  border-top: 7px solid var(--basic-red);
+}
+
+.modal-map img {
+  display: block;
 }
 
 /* Buttons */
