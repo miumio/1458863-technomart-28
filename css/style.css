@@ -1689,6 +1689,7 @@ input[type="radio"].visually-hidden {
   margin: auto;
   background-color: var(--basic-white);
   box-shadow: 0px 4px 20px var(--box-shadow);
+  border-top: 7px solid var(--basic-red);
   z-index: 10;
 }
 
@@ -1704,14 +1705,28 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
-/* Feedback */
+.modal-strip {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 112px;
+  padding: 0 112px 0 112px;
+
+  background-color: var(--form-strip);
+
+  box-sizing: border-box;
+}
+
+/* Modal feedback */
 
 .modal-feedback {
   width: 620px;
   height: 430px;
   padding: 39px 0;
 
-  border-top: 7px solid var(--basic-red);
   box-sizing: border-box;
 }
 
@@ -1762,14 +1777,6 @@ input[type="radio"].visually-hidden {
   z-index: 100;
 }
 
-.modal-feedback-strip {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 112px;
-  background-color: var(--form-strip);
-}
-
 /* Modal map */
 
 .modal-map {
@@ -1782,6 +1789,29 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
+/* Modal basket */
+
+.modal-basket {
+  width: 620px;
+  height: 282px;
+  padding-top: 50px;
+  font-family: "Cuprum", Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+
+  background: url("../img/icon-mark.svg") no-repeat left 81px top 48px;
+  background-color: var(--basic-white);
+
+  box-sizing: border-box;
+}
+
+.modal-basket .btn-white {
+  width: 192px;
+  padding: 10px 10px 8px 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
 /* Buttons */
 
 .btn-green {
