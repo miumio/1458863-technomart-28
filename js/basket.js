@@ -9,14 +9,12 @@ for (var i = 0; i < basketLinks.length; i++) {
 var basketPopup = document.querySelector(".modal-basket");
 var basketClose = basketPopup.querySelector(".modal-close");
 
-basketClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
+basketClose.addEventListener("click", function () {
   basketPopup.classList.remove("modal-show");
 });
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener("keydown", function () {
   if (evt.keyCode === 27) {
-    evt.preventDefault();
     if (basketPopup.classList.contains("modal-show")) {
       basketPopup.classList.remove("modal-show");
     }
