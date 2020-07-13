@@ -271,7 +271,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header-link {
-  padding: 10px 36px 8px 25px;
+  padding: 10px 29px 8px 20px;
   color: var(--basic-white);
 }
 
@@ -775,11 +775,15 @@ input[type="radio"].visually-hidden {
 
 .popular-header {
   margin-bottom: 21px;
-  padding: 25px 19px 25px 28px;
+  padding: 25px 17px 25px 28px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--light-grey);
+}
+
+.popular-header:nth-child(1) {
+  padding-right: 14px;
 }
 
 .popular-header .main-title {
@@ -868,6 +872,7 @@ input[type="radio"].visually-hidden {
 }
 
 .service-slide {
+  position: relative;
   display: none;
   width: 620px;
   min-height: 100%;
@@ -886,16 +891,46 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
-.service-slide-shipping {
-  background: url("../img/car.png") no-repeat bottom -95px right;
+.service-slide-shipping::after {
+  position: absolute;
+  top: 19px;
+  right: 0;
+
+  content: "";
+  width: 468px;
+  height: 261px;
+  background: url("../img/car.png") no-repeat center;
 }
 
-.service-slide-garanty {
-  background: url("../img/garanty.png") no-repeat bottom -95px right;
+.service-slide-garanty::after {
+  position: absolute;
+  top: -2px;
+  right: -7px;
+
+  content: "";
+  width: 389px;
+  height: 283px;
+  background: url("../img/garanty.png") no-repeat center;
 }
 
-.service-slide-credit {
-  background: url("../img/credit.png") no-repeat bottom -95px right;
+.service-slide-garanty .description-text {
+  margin-top: -4px;
+  width: 315px;
+}
+
+.service-slide-credit::after {
+  position: absolute;
+  top: -2px;
+  right: -10px;
+
+  content: "";
+  width: 465px;
+  height: 285px;
+  background: url("../img/credit.png") no-repeat center;
+}
+
+.service-slide-credit .description-text {
+  width: 278px;
 }
 
 /* Information */
@@ -1570,7 +1605,7 @@ input[type="checkbox"]:disabled ~ .check-box-label {
 }
 
 .page-footer-address-col {
-  width: 321px;
+  width: 329px;
 }
 
 .page-footer-address-col a {
@@ -1579,6 +1614,7 @@ input[type="checkbox"]:disabled ~ .check-box-label {
 
 .page-footer-address-col p {
   margin: 0;
+  margin-left: 5px;
 }
 
 .page-footer-nav-col {
