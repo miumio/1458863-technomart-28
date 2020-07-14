@@ -8,8 +8,13 @@ for (var i = 0; i < basketLinks.length; i++) {
 
 var basketPopup = document.querySelector(".modal-basket");
 var basketClose = basketPopup.querySelector(".modal-close");
+var goShop = basketPopup.querySelector(".js-close");
 
 basketClose.addEventListener("click", function () {
+  basketPopup.classList.remove("modal-show");
+});
+
+goShop.addEventListener("click", function () {
   basketPopup.classList.remove("modal-show");
 });
 

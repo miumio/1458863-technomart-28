@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/minstyle.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -121,7 +121,7 @@
                 <div class="price-controls">
                   <input type="text" name="minprice" value="0">
                   <span>&mdash;</span>
-                  <input type="text" name="maxprice" value="3000">
+                  <input type="text" name="maxprice" value="30000">
                 </div>
               </fieldset>
               <fieldset class="filter-fieldset filter-line">
@@ -166,7 +166,7 @@
               </fieldset>
               <fieldset class="filter-fieldset">
                 <legend class="filter-legend">Питание</legend>
-                <ul class="filter-list">
+                <ul class="filter-list filter-list-radio">
                   <li class="filter-list-item">
                     <label>
                       <input class="visually-hidden" type="radio" name="charge" id="battery">
@@ -345,7 +345,7 @@
               <li class="pagination-btn">
                 <a href="#">3</a>
               </li>
-              <li class="pagination-btn">
+              <li class="pagination-btn pagination-btn-last">
                 <a href="#">следующая</a>
               </li>
             </ul>
@@ -357,7 +357,11 @@
           <h2 class="main-title main-title-black">Пара слов о перфораторах</h2>
           <p class="description-text">
             Перфоратор &mdash; универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
-            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
+          </p>
+          <p class="description-text">
+            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
+          </p>
+          <p class="description-text">
             В ассортиментном ряду есть выбор &laquo;трехрежимников&raquo;: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
           </p>
         </div>
@@ -452,9 +456,9 @@
       <button class="btn modal-close" type="button" aria-label="Закрыть"></button>
       <div class="modal-basket-container">
         <a class="btn btn-red">Оформить заказ</a>
-        <a class="btn btn-white">Продолжить покупки</a>
+        <a class="btn btn-white js-close">Продолжить покупки</a>
       </div>
     </section>
-    <script src="js/basket.js"></script>
+    <script src="js/minbasket.js"></script>
   </body>
 </html>

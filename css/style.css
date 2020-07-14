@@ -317,8 +317,9 @@ input[type="radio"].visually-hidden {
 .phone {
   display: block;
   width: 100%;
+  margin-left: -10px;
   margin-bottom: 2px;
-  padding: 5px 42px 5px 20px;
+  padding: 5px 45px 5px 15px;
   border: 3px solid var(--basic-white);
 
   font-size: 21px;
@@ -338,7 +339,7 @@ input[type="radio"].visually-hidden {
 }
 
 .adress {
-  margin: 0;
+  margin: 0 0 0 -13px;
   font-size: 14px;
   color: var(--special-grey);
 }
@@ -485,8 +486,9 @@ input[type="radio"].visually-hidden {
 
 .basket {
   width: 136px;
+  margin-left: 10px;
   padding-right: 0;
-  padding-left: 15px;
+  padding-left: 10px;
 
   background-color: var(--basic-red);
 
@@ -1041,14 +1043,11 @@ input[type="radio"].visually-hidden {
   background-color: var(--basic-red);
 }
 
-
-
 .map {
   display: block;
   margin-top: 6px; 
   margin-bottom: 17px;
 }
-
 
 /* Catalog */
 
@@ -1103,7 +1102,7 @@ input[type="radio"].visually-hidden {
   grid-row-gap: 18px;
 
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 49px;
   padding: 0;
 
   list-style: none;
@@ -1306,6 +1305,10 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
+.pagination-btn-last {
+  padding: 6px 30px;
+}
+
 .pagination-btn-current a {
   color: var(--basic-white);
 }
@@ -1318,15 +1321,14 @@ input[type="radio"].visually-hidden {
   border-color: var(--basic-red);
 }
 
-
 /* Filter */
 
 .content-col-header {
   display: flex;
   align-items: center;
 
-  margin-bottom: 25px;
-  padding: 7px 10px 7px 18px;
+  margin-bottom: 28px;
+  padding: 5px 10px 6px 19px;
 
   background-color: var(--special-background);
 }
@@ -1378,6 +1380,10 @@ input[type="radio"].visually-hidden {
 
   list-style: none;
   line-height: 45px;
+}
+
+.filter-list-radio {
+  margin-top: 10px;
 }
 
 .filter-list-item {
@@ -1460,7 +1466,6 @@ input[type="checkbox"]:disabled ~ .check-box-label {
   opacity: 0.4;
 }
 
-
 .filter-result-list {
   display: flex;
   justify-content: flex-end;
@@ -1472,7 +1477,7 @@ input[type="checkbox"]:disabled ~ .check-box-label {
 }
 
 .filter-result-list-item {
-  padding-left: 65px;
+  padding-left: 67px;
 }
 
 .filter-result-list-item a {
@@ -1569,7 +1574,7 @@ input[type="checkbox"]:disabled ~ .check-box-label {
 
   margin-bottom: 9px;
   margin-top: 6px;
-  padding: 40px 20px 38px 18px;
+  padding: 37px 20px 38px 18px;
 
   background-color: var(--special-background);
   border-radius: 4px;
@@ -1588,7 +1593,7 @@ input[type="checkbox"]:disabled ~ .check-box-label {
 
 .range-controls .toggle {
   position: absolute;
-  top: 40px;
+  top: 37px;
 
   display: block;
   width: 4px;
@@ -1642,7 +1647,6 @@ input[type="checkbox"]:disabled ~ .check-box-label {
 
   background-color: var(--basic-darkblue);
 }
-
 
 .page-footer-inner {
   padding-bottom: 40px;
@@ -1987,7 +1991,7 @@ input[type="checkbox"]:disabled ~ .check-box-label {
 }
 
 .modal-basket .btn-white {
-  padding: 8px 32px 9px;
+  padding: 9px 32px 8px;
 
   font-size: 14px;
   text-align: center;
@@ -1997,14 +2001,13 @@ input[type="checkbox"]:disabled ~ .check-box-label {
 /* Buttons */
 
 .btn-green {
-  padding: 9px 16px 9px 19px;
+  padding: 9px 16px 9px 20px;
   background-color: var(--basic-green);
 }
 
 .btn-green:hover {
   background-color: var(--special-success);
 }
-
 
 .btn-red {
   display: block;
