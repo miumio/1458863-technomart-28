@@ -242,17 +242,17 @@ input[type="radio"].visually-hidden {
   background-color: var(--basic-background);
 }
 
+.header-inner .btn-white {
+  margin-left: 12px;
+}
+
 .header-inner-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .header-inner-item {
   display: flex;
-  padding-left: 30px;
-  width: 33.33333%;
-  justify-content: space-between;
   align-items: flex-start;
 
   -webkit-box-sizing: border-box;
@@ -262,10 +262,8 @@ input[type="radio"].visually-hidden {
 
 .header-inner-contacts {
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-left: 7px;
-  padding-right: 37px;
+  margin-left: 80px;
+  margin-right: auto;
 }
 
 .header-inner-login {
@@ -274,7 +272,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header-link {
-  padding: 10px 29px 8px 20px;
+  padding: 10px 26px 8px 20px;
   color: var(--basic-white);
 }
 
@@ -306,7 +304,7 @@ input[type="radio"].visually-hidden {
 .header-title {
   margin: 0;
   margin-top: -3px;
-  padding: 0;
+  padding: 0 0 0 30px;
   width: 210px;
   font-size: 16px;
   font-style: italic;
@@ -316,10 +314,8 @@ input[type="radio"].visually-hidden {
 
 .phone {
   display: block;
-  width: 100%;
-  margin-left: -10px;
   margin-bottom: 2px;
-  padding: 5px 45px 5px 15px;
+  padding: 5px 45px 5px 70px;
   border: 3px solid var(--basic-white);
 
   font-size: 21px;
@@ -339,9 +335,10 @@ input[type="radio"].visually-hidden {
 }
 
 .adress {
-  margin: 0 0 0 -13px;
+  margin: 0;
   font-size: 14px;
   color: var(--special-grey);
+  text-align: center;
 }
 
 .site-nav-wrapper {
@@ -507,7 +504,7 @@ input[type="radio"].visually-hidden {
 
 .search-field {
   display: block;
-  padding: 0 20px 0 41px;
+  padding: 0 20px 0 43px;
   width: 100%;
   height: 42px;
 
@@ -766,7 +763,7 @@ input[type="radio"].visually-hidden {
 
 .slider-controls {
   position: absolute;
-  bottom: 96px;
+  bottom: 102px;
   left: 19px;
 
   display: flex;
@@ -2073,6 +2070,10 @@ input[type="checkbox"]:disabled ~ .check-box-label {
   border: 1px solid var(--special-lightgrey);
 }
 
+.btn-slider {
+  display: flex;
+  justify-content: center;
+}
 /* Animations */
 
 @keyframes bounce {
