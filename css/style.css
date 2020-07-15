@@ -957,6 +957,7 @@ input[type="radio"].visually-hidden {
 
 .service-slide-garanty .description-text {
   margin-top: -4px;
+  margin: 0;
   width: 315px;
 }
 
