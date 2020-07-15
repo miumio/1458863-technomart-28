@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/minstyle.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -119,9 +119,15 @@
                   </div>
                 </div>
                 <div class="price-controls">
-                  <input type="text" name="minprice" value="0">
+                  <label>
+                    <span class="visually-hidden">Введите начальную цену</span>
+                    <input type="text" name="minprice" value="0">
+                  </label>
                   <span>&mdash;</span>
-                  <input type="text" name="maxprice" value="30000">
+                  <label>
+                  <span class="visually-hidden">Введите максимульную цену</span>
+                    <input type="text" name="maxprice" value="30000">
+                  </label>
                 </div>
               </fieldset>
               <fieldset class="filter-fieldset filter-line">
@@ -459,6 +465,6 @@
         <a class="btn btn-white js-close">Продолжить покупки</a>
       </div>
     </section>
-    <script src="js/minbasket.js"></script>
+    <script src="js/basket.js"></script>
   </body>
 </html>

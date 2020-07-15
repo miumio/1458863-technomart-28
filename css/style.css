@@ -233,7 +233,6 @@ input[type="radio"].visually-hidden {
 
 .header-wrapper {
   display: flex;
-  justify-content: flex-end;
   font-size: 18px;
 }
 
@@ -248,6 +247,7 @@ input[type="radio"].visually-hidden {
 
 .header-inner-wrapper {
   display: flex;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
@@ -262,12 +262,13 @@ input[type="radio"].visually-hidden {
 
 .header-inner-contacts {
   flex-direction: column;
-  margin-left: 80px;
-  margin-right: auto;
+  margin: 0 auto 0 80px;
+  width: 269px;
 }
 
 .header-inner-login {
   flex-direction: column;
+  width: 299px;
   text-align: center;
 }
 
@@ -315,7 +316,7 @@ input[type="radio"].visually-hidden {
 .phone {
   display: block;
   margin-bottom: 2px;
-  padding: 5px 45px 5px 70px;
+  padding: 5px 40px 5px 70px;
   border: 3px solid var(--basic-white);
 
   font-size: 21px;
@@ -1140,6 +1141,11 @@ input[type="radio"].visually-hidden {
 }
 
 .product-card:hover .product-card-popup {
+  opacity: 1;
+  pointer-events: auto;
+}
+.product-card:hover,
+.product-card:focus-within .product-card-popup {
   opacity: 1;
   pointer-events: auto;
 }
